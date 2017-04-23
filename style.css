@@ -1,0 +1,43 @@
+/* 
+ Theme Name:     Divi Child Theme
+ Author:         Shay
+ Author URI:     https://offixonline.com
+ Template:       Divi
+ Version:        1.0
+ Description:    Displays Custom WooCommerce Cart Icon
+*/ 
+
+/*  ------ Make the cart icon larger ------ */
+.et-cart-info span:before {
+    margin-right: -5px;
+    content: "\e07a"; /* YOU CAN CHANGE THE ICON HERE */
+    font-size: 1.5em;
+}
+
+/*  ------ Cart item count ------ */
+a.cart-contents {
+    float: right;
+    position: absolute;
+    top: 15px;
+    background: #2ea3f2;  /* CHANGE ICON BACKGROUND COLOR HERE */
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;  /* CHANGE DIGIT COLOR HERE */
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right: 5px;
+    text-align: center;
+    width: 1.6em; 
+}
+
+/*  ------ Mobile view ------ */
+@media (max-width: 980px) {
+#et-top-navigation .et-cart-info {
+    margin-top: 5px;
+    margin-right: 20px; }
+
+a.cart-contents {
+    right: 30px; }
+}
